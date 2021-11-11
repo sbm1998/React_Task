@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from 'mobx-react';
+import UsersStore from './Stores/Users';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider UsersStore={UsersStore}>
+    <App  />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
