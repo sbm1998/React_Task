@@ -1,10 +1,17 @@
 import './App.css';
-import RandomData from './Components/RandomData'
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import RandomData from './Components/RandomData';
+
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+      <Switch>
       {/* @ts-ignore */}
-      <RandomData />
+      <Route path="/" exact component={RandomData} />
+      </Switch>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,9 +1,16 @@
 .fetchUser{
     background-color: red;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
 }
 .updateplan{
     background-color: blue;
+    font-size: medium;
+    font-weight: bold;
 }
 .cancelupdate{
     background-color: green;
+    border-width: medium;
+    font-weight: bold;
 }
